@@ -1,6 +1,4 @@
-import image_899ea7be57848d54f4f854246ce612ccda2de40b from 'figma:asset/899ea7be57848d54f4f854246ce612ccda2de40b.png';
-import image_dfbc146d14f0460b47aa7206e9e564d4ebe756f9 from 'figma:asset/dfbc146d14f0460b47aa7206e9e564d4ebe756f9.png';
-import image_a66f1656fd0478a38b9506d64d8248973936e255 from 'figma:asset/a66f1656fd0478a38b9506d64d8248973936e255.png';
+// Imagens do protótipo - agora usando assets locais
 import { useState } from "react";
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import { Button } from "./components/ui/button";
@@ -11,6 +9,14 @@ import { BookOpen, Users, Shield, Search, Calendar, Target, Palette, Monitor, Sm
 
 export default function App() {
   const [currentSection, setCurrentSection] = useState(0);
+  
+  // Caminhos das imagens do protótipo
+  const prototypeImages = {
+    userHome: "/assets/printUserCursos.png",
+    userBooks: "/assets/printLivrosUser.png", 
+    adminHome: "/assets/printAdminHome.png",
+    adminBooks: "/assets/printAdminLivros.png"
+  };
   
   const sections = [
     "Capa",
@@ -540,8 +546,8 @@ export default function App() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video bg-white">
                       <img 
-                        src={image_a66f1656fd0478a38b9506d64d8248973936e255}
-                        alt="Página inicial do usuário"
+                        src={prototypeImages.userHome}
+                        alt="Página inicial do usuário - Cursos"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -553,8 +559,8 @@ export default function App() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video bg-white">
                       <img 
-                        src={image_dfbc146d14f0460b47aa7206e9e564d4ebe756f9}
-                        alt="Página de livros disponíveis"
+                        src={prototypeImages.userBooks}
+                        alt="Página de livros disponíveis para usuário"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -575,8 +581,8 @@ export default function App() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video bg-white">
                       <img 
-                        src="[INSERIR_IMAGEM_DASHBOARD_ADMIN_AQUI]"
-                        alt="Dashboard administrativo"
+                        src={prototypeImages.adminHome}
+                        alt="Dashboard administrativo - Página inicial"
                         className="w-full h-full object-cover"
                       />
                     </div>
@@ -588,8 +594,8 @@ export default function App() {
                   <Card className="overflow-hidden">
                     <div className="aspect-video bg-white">
                       <img 
-                        src={image_899ea7be57848d54f4f854246ce612ccda2de40b}
-                        alt="Gerenciamento de livros"
+                        src={prototypeImages.adminBooks}
+                        alt="Gerenciamento de livros do administrador"
                         className="w-full h-full object-cover"
                       />
                     </div>
