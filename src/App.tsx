@@ -541,6 +541,15 @@ export default function App() {
                   </div>
                 </Card>
               </div>
+
+              <div className="mt-12">
+                <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
+                  <p className="text-blue-800 text-sm leading-relaxed">
+                    A partir da matriz CSD, percebemos que o maior risco era a falta de integração com o acervo. 
+                    Por isso defini que a prioridade do MVP seria garantir informações confiáveis e atualizadas.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -867,7 +876,7 @@ export default function App() {
                     <p className="text-gray-600 leading-relaxed">
                       Os sistemas tradicionais como o <strong>Pergamum</strong>, apesar de tecnicamente funcionais, 
                       apresentam uma barreira significativa de usabilidade. A interface densa, carregada de informações 
-                      técnicas e processos burocráticos, transforma uma tarefa simples — encontrar e reservar um livro — 
+                      técnicas e processos burocráticos, transforma uma tarefa simples, encontrar e reservar um livro, 
                       em uma jornada complexa que exige múltiplos cliques, conhecimento prévio do sistema e paciência 
                       para navegar por tabelas confusas. Essa complexidade operacional não apenas frustra o usuário final, 
                       mas também gera ineficiência administrativa, sobrecarregando os bibliotecários com demandas que 
@@ -1567,6 +1576,16 @@ export default function App() {
               <h2 className="text-3xl font-medium mb-12 text-center" style={{ color: 'var(--title-color)' }}>
                 Avaliação Heurística – 10 Heurísticas de Nielsen
               </h2>
+
+              <div className="mb-8">
+                <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
+                  <p className="text-blue-800 text-sm leading-relaxed">
+                    A Avaliação Heurística mostrou que muitos dos problemas vividos pelos alunos não estavam na falta de recursos da biblioteca, 
+                    mas sim na forma como a informação era apresentada. Ficou evidente que a maior parte das dificuldades (deslocamentos desnecessários, 
+                    buscas frustradas, erros simples e dúvidas frequentes) surgem porque os sistemas atuais não oferecem clareza, previsibilidade ou orientação adequada.
+                  </p>
+                </div>
+              </div>
               
               <div className="space-y-6">
                 {/* Heurística 1 */}
@@ -1863,15 +1882,15 @@ export default function App() {
               
               <div className="bg-gradient-to-r from-gray-50 to-white rounded-lg p-12 mb-12">
                 <Target className="w-16 h-16 mx-auto mb-6" style={{ color: 'var(--primary-color)' }} />
-                <h3 className="text-2xl font-medium mb-4" style={{ color: 'var(--title-color)' }}>
+                <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
+                  Esse projeto nos mostrou que tecnologia também é um ato de cuidado. Ao desenvolver o Open Pages, 
+                  entendemos que um sistema de reserva vai muito além de organizar livros — ele existe para respeitar 
+                  o tempo, a autonomia e a dignidade de cada estudante que depende desse acesso no seu dia a dia.
+                </p>
+
+                <h3 className="text-2xl font-medium mb-6 mt-12" style={{ color: 'var(--title-color)' }}>
                   Impacto da Solução
                 </h3>
-                <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-                  A análise identificou um problema real e recorrente no ambiente acadêmico: a dificuldade de acesso 
-                  eficiente a livros devido à falta de informação sobre disponibilidade. A solução proposta de um 
-                  sistema digital de consulta em tempo real tem potencial para transformar a experiência dos usuários 
-                  da biblioteca.
-                </p>
                 
                 <div className="grid md:grid-cols-3 gap-6 text-left">
                   <Card className="p-4">
