@@ -1894,7 +1894,7 @@ export default function App() {
                 <Target className="w-16 h-16 mx-auto mb-6" style={{ color: 'var(--primary-color)' }} />
                 <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
                   Esse projeto nos mostrou que tecnologia também é um ato de cuidado. Ao desenvolver o Open Pages, 
-                  entendemos que um sistema de reserva vai muito além de organizar livros — ele existe para respeitar 
+                  entendemos que um sistema de reserva vai muito além de organizar livros ele existe para respeitar 
                   o tempo, a autonomia e a dignidade de cada estudante que depende desse acesso no seu dia a dia.
                 </p>
 
