@@ -1868,6 +1868,16 @@ export default function App() {
                   </div>
                 </Card>
               </div>
+
+              <div className="mt-8">
+                <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-500">
+                  <p className="text-blue-800 text-sm leading-relaxed">
+                    A Avaliação Heurística mostrou que muitos dos problemas vividos pelos alunos não estavam na falta de recursos da biblioteca, 
+                    mas sim na forma como a informação era apresentada. Ficou evidente que a maior parte das dificuldades (deslocamentos desnecessários, 
+                    buscas frustradas, erros simples e dúvidas frequentes) surgem porque os sistemas atuais não oferecem clareza, previsibilidade ou orientação adequada.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
